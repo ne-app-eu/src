@@ -1,0 +1,4 @@
+Common Core Files
+=================
+
+To be used in NeAnt and Ant. They provide additional kernel and user runtime files.

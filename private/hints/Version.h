@@ -8,7 +8,7 @@
 
 #define USR_VERSION "v1.1.4-neant"
 
-#define USR_EDITION "NeAnt OS Userspace"
+#define USR_EDITION "NeAnt OS Userspace (CommonCore)"
 
 #define USR_VERSION_BCD (0x1104)
 #define USR_VERSION_RSRC 1,1,4,0
