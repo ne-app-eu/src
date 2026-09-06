@@ -21,7 +21,11 @@ DDK_EXTERN bool ddk_sanity_check(void) {
 
 /// @brief Does enable the DDK guard when calling in a stack frame.
 DDK_EXTERN void ddk_guard_function(struct ddk_guard_type* g) {
+#ifdef __NEOSKRNL__
     if (!g) ke_call_dispatch("KeRuntimeCheck", 1, g, sizeof(struct ddk_guard_type));
+#else
+    if (!g) ke_call_dispatch("RtlKeRuntimeCheck", 1, g, sizeof(struct ddk_guard_type));
+#endif
 
     while (g->e_ != NULL && *g->e_);
 
