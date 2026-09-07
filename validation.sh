@@ -2,7 +2,7 @@
 
 ## To be used for curl -fsSL https://install.nekernel.org | sh
 
-echo "==> NE.APP: WELCOME TO THE NESYSTEM STABLE PDK."
+echo "==> NE.APP: WELCOME TO THE NESYSTEM VALIDATION PDK."
 echo "==> NE.APP: INSTALLING PDK..."
 echo "==> NEW: ANT IS NOW AVAILABLE AS A STANDALONE OS DISTRIBUTION AND PDK."
 
@@ -21,10 +21,10 @@ GIT=git
 
 mkdir ${DIST}
 
-${GIT} ${FLAGS} https://github.com/ne-app-open/${SRC}.git --branch stable ${DIST}/${SRC}
-${GIT} ${FLAGS} https://github.com/ne-app-open/${KRNL}.git --branch stable ${DIST}/${KRNL}
-${GIT} ${FLAGS} https://github.com/ne-app-open/${NEBUILD}.git --branch stable ${DIST}/${NEBUILD}
-${GIT} ${FLAGS} https://github.com/ne-app-open/${NCC}.git --branch stable ${DIST}/${NCC}
+${GIT} ${FLAGS} https://github.com/ne-app-open/${SRC}.git --branch validation ${DIST}/${SRC}
+${GIT} ${FLAGS} https://github.com/ne-app-open/${KRNL}.git --branch validation ${DIST}/${KRNL}
+${GIT} ${FLAGS} https://github.com/ne-app-open/${NEBUILD}.git --branch validation ${DIST}/${NEBUILD}
+${GIT} ${FLAGS} https://github.com/ne-app-open/${NCC}.git --branch validation ${DIST}/${NCC}
 
 cd ${DIST}
 

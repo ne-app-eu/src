@@ -3,14 +3,5 @@
 // Licensed under the Apache License, Version 2.0 (see LICENSE file)
 // Official repository: https://github.com/ne-app-eu/src
 
-#ifndef COMPILERKIT_VERSION_H
-#define COMPILERKIT_VERSION_H
+#include <KernelTest/headers/Foundation.h>
 
-#define USR_VERSION "v1.1.4-neant"
-
-#define USR_EDITION "NeAnt OS Userspace (CommonCore)"
-
-#define USR_VERSION_BCD (0x1104)
-#define USR_VERSION_RSRC 1,1,4,0
-
-#endif

@@ -1,4 +1,4 @@
-# Ne.app NeSystem for Claude Code
+# Ne.app NeAnt for Claude Code
 
 ## Requirements 
 
