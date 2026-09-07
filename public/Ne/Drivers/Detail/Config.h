@@ -16,6 +16,10 @@
 #define _NEKERNEL 202609L
 #endif
 
+#ifndef _COMMONCORE
+#define _COMMONCORE 202609L
+#endif
+
 #ifndef CLEANUP
 #define CLEANUP __cleanup__
 #endif
