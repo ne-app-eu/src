@@ -1,6 +1,6 @@
-<!-- ReadMe of the NeSystem -->
+<!-- ReadMe of the NeAnt -->
 
-# Ne.app NeAnt (fka NeSystem)
+# Ne.app NeAnt (fka NeAnt)
 
 ### Notice
 

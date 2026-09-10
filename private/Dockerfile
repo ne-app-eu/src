@@ -4,7 +4,7 @@ FROM debian
 
 RUN apt-get update && apt-get upgrade -y
 
-# Blobs for private NeSystem parts.
+# Blobs for private NeAnt parts.
 RUN mkdir /blobs
 
 COPY ./ ./src/
