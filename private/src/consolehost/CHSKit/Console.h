@@ -29,3 +29,7 @@ struct _SHARED CHS_CONSOLE _FINAL {
   Char    fTitle[kNeConsoleMaxTitleSz];   // display title, e.g. "Ne.app Console"
   SizeT   fTitleSz;
 };
+
+IMPORT_C SInt32 CHSCloseConsole(Void);
+IMPORT_C SInt32 CHSWriteConsole(_Input const Char* buf, _Input SizeT buf_sz);
+IMPORT_C SInt32 CHSReadConsole(_Output Char* buf, _Input SizeT buf_sz);
