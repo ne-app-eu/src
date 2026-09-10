@@ -10,7 +10,7 @@
 #include <Ne/System/LWAS.h>
 
 /***********************************************************************************/
-/// @brief NeSystem Console API.
+/// @brief NeAnt Console API.
 /***********************************************************************************/
 
 #ifndef kNeConsoleMaxTitleSz

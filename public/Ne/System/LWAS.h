@@ -20,7 +20,7 @@
 struct LHANDLE;
 
 struct _SHARED LHANDLE _FINAL {
-  VoidPtr fHandle;  /// @brief Mandatory for NeSystem handles.
+  VoidPtr fHandle;  /// @brief Mandatory for NeAnt handles.
   Char    fPad[8];
   SInt64  fMagic;
   SInt32  fHostID, fFlags, fKind;
