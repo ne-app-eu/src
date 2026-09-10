@@ -163,4 +163,7 @@ IMPORT_C SInt32 UsrGetVKeyDown(Void);
 /// @brief Is Virtual Key?
 IMPORT_C Bool   UsrIsVKey(Void);
 
+typedef struct LHANDLE HLWAS;
+typedef HLWAS* PHLWAS;
+
 #endif  // _NE_LWAS_SUBSYSTEM_H_
