@@ -1,4 +1,4 @@
-Please include the copyright headers for the Ne.app NeSystem file:
+Please include the copyright headers for the Ne.app NeAnt file:
 
 // SPDX-License-Identifier: Apache-2.0
 // Copyright 2024-2026, Amlal El Mahrouss (amlal@nekernel.org)

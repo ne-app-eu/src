@@ -23,5 +23,5 @@
     "kNeBaseVersionHighest=0x0100",
     "kNeBaseVersionLowest=0x0100"
   ],
-  "description": "The Ne.app NeSystem Base Server."
+  "description": "The Ne.app NeAnt Base Server."
 }

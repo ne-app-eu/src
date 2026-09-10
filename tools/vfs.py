@@ -1,5 +1,5 @@
 # Copyright 2026, Ne.app.
-# NeSystem is licensed under Apache-2.0.
+# NeAnt is licensed under Apache-2.0.
 # SPDX-Identifier: Apache-2.0
 
 # -*- coding: utf-8 -*-

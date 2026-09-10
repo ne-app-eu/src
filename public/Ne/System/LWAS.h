@@ -20,7 +20,7 @@
 struct LHANDLE;
 
 struct _SHARED LHANDLE _FINAL {
-  VoidPtr fHandle;  /// @brief Mandatory for NeSystem handles.
+  VoidPtr fHandle;  /// @brief Mandatory for NeAnt handles.
   Char    fPad[8];
   SInt64  fMagic;
   SInt32  fHostID, fFlags, fKind;
@@ -162,5 +162,8 @@ IMPORT_C SInt32 UsrGetVKeyDown(Void);
 
 /// @brief Is Virtual Key?
 IMPORT_C Bool   UsrIsVKey(Void);
+
+typedef struct LHANDLE HLWAS;
+typedef HLWAS* PHLWAS;
 
 #endif  // _NE_LWAS_SUBSYSTEM_H_

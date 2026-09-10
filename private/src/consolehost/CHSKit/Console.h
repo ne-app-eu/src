@@ -7,9 +7,30 @@
 
 #include <Ne/System/CAS.h>
 #include <SystemKit/Err.h>
+#include <Ne/System/LWAS.h>
 
 /***********************************************************************************/
-/// @brief NeSystem Console API.
+/// @brief NeAnt Console API.
 /***********************************************************************************/
 
-struct CHS_CONSOLE;
+#ifndef kNeConsoleMaxTitleSz
+#define kNeConsoleMaxTitleSz 128
+#endif
+
+struct _SHARED CHS_CONSOLE _FINAL {
+  PHLWAS  fHandle;       // LWAS window handle for this console
+  VoidPtr fWindowPtr;    // opaque window backing pointer (passed to UsrCreateWindow)
+  SizeT   fWindowSz;     // size of fWindowPtr region
+
+  SInt32  fFlags;        // runtime state flags (open, fullscreen, etc.)
+  SInt32  fHostID;       // ties back to the host service instance
+  SInt32  fKind;         // console kind (e.g. system vs user console)
+
+  Char    fTitle[kNeConsoleMaxTitleSz];   // display title, e.g. "Ne.app Console"
+  SizeT   fTitleSz;
+};
+
+IMPORT_C SInt32 CHSOpenConsole(Void);
+IMPORT_C SInt32 CHSCloseConsole(Void);
+IMPORT_C SInt32 CHSWriteConsole(_Input const Char* buf, _Input SizeT buf_sz);
+IMPORT_C SInt32 CHSReadConsole(_Output Char* buf, _Input SizeT buf_sz);

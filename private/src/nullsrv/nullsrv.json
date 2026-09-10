@@ -29,5 +29,5 @@
     "kNePsxVersionHighest=0x0100",
     "kNePsxVersionLowest=0x0100"
   ],
-  "description": "The Ne.app NeSystem NULL Server."
+  "description": "The Ne.app NeAnt NULL Server."
 }
