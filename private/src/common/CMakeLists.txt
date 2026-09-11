@@ -7,8 +7,6 @@ if(DEFINED NEANT_SRC_RELEASE_PROFILE)
 
 	message("NeAnt: Running release CommonCore build...")
 
-	
-
 elseif(DEFINED NEANT_SRC_RELEASE_PROFILE)
 
 	message("NeAnt: Running debug CommonCore build...")
