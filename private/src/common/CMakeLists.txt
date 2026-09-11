@@ -3,11 +3,13 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE file)
 # Official repository: https://github.com/ne-app-eu/src
 
-if(DEFINED NEANT_RELEASE_PROFILE)
+if(DEFINED NEANT_SRC_RELEASE_PROFILE)
 
 	message("NeAnt: Running release CommonCore build...")
 
-elseif(DEFINED NEANT_DEBUG_PROFILE)
+	
+
+elseif(DEFINED NEANT_SRC_RELEASE_PROFILE)
 
 	message("NeAnt: Running debug CommonCore build...")
 
