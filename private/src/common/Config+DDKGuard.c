@@ -3,6 +3,7 @@
 // Licensed under the Apache License, Version 2.0 (see LICENSE file)
 // Official repository: https://github.com/ne-app-eu/src
 
+#include <stdbool.h>
 #include <Ne/Drivers/DDS.h>
 
 /// @note This file was designed to compile with Ant as well.
